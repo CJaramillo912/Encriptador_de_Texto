@@ -1,4 +1,4 @@
-# EncriptadorSecretScript.github.io
+# Encriptador_de_Texto
 Encriptador de texto realizado por Fer Jaramillo (CJaramillo912) en el proyecto ONE Oracle Next Education.
 
 Se trabajó en una aplicación que encriptar textos, con el fin de intercambiar mensajes secretos con otras personas.
