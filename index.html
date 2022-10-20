@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecretScript</title>
+    <link rel="shortcut icon" href="imagenes/isotipo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagenes/imagotipo.png" alt="Nuestro logo" width="120">
+    </header>
+    <div class="contenedor">
+
+        <div class="cont-izquierda">
+            <form>
+                <textarea id="input" class="input" cols="40" rows="6" placeholder="Ingrese el texto aqui"></textarea>
+                    <div class="cont-alerta">
+                        <img src="imagenes/advertencia.png" class="imgAlerta"alt="Advertencia">
+                        <span class="alerta">Solo letras minusculas, sin acentos ni caracteres especiales.</span>
+                    </div>
+                    <button id="botonEncriptar" class="boton botonEncriptar" type="button">Encriptar</button>
+                    <button id="botonDesencriptar" class="boton botonDesencriptar" type="button">Desencriptar</button>
+            </form>
+        </div>
+        
+        <div class="cont-derecha">
+            <div class="resultado">
+                <img id="imagenNoTexto" class="imagenNoTexto" src="imagenes/errorVerde.png" alt="Imagen no encontrada">
+                <h2 id="resultadoTitulo" class="resultadoTitulo">Ningún mensaje fue encontrado</h2>
+                <p id="resultadoTexto" class="resultadoTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button id=botonCopiar class="boton botonCopiar" type="button">Copiar</button>
+                <textarea id="output" class="output" cols="18" rows="15"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+<footer>
+    <p class="copyrights">&copy Encriptador SecretScript Creado por Fer Jaramillo.</p>
+</footer>
+
+</html>

@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
+
+/*Estilos generales*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {/*variables css*/
+    --color-blanco:#fff;
+    --color-azul: #76AADB;
+    --color-gris: #495057;
+    --color-dark: #292A2D;
+    --color-verde: #BAC44B;
+    --fuente: 'Inter', sans-serif;
+}
+
+header{
+
+    float: left;
+}
+
+body{
+    background-image: url("../imagenes/background.png");
+    background-size: 1100px;
+    font-family: var(--fuente);
+    padding: 2em 2em;
+    line-height: 1.6;
+}
+
+.contenedor{
+    height: 100%;
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cont-izquierda{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+form {
+    height: 100% ;
+}
+
+/*Estilo textarea input*/
+.input {
+    border: 0;
+    background: none;
+    resize: none;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    color: var(--color-blanco);
+    font-size: 1.5rem;
+    line-height: 1.8;
+    text-align: left;
+    text-shadow: 0.1em 0.1em 0.2em black
+}
+.input:focus {
+    outline: none;
+}
+::placeholder{
+    text-align: left;
+    font-size: 2rem;
+    color: var(--color-blanco);
+}
+
+.alerta {
+    font-size: 0.75rem;
+    line-height: 4;
+    color: var(--color-blanco);
+    text-shadow: 0.1em 0.1em 0.2em black
+}
+
+.imgAlerta {
+    vertical-align: middle;
+}
+
+.boton {
+    display: inline-block;
+    padding: 24px;
+    font-size: 16px;
+    border: 1px solid var(--color-blanco);
+    border-radius: 24px;
+    width: 200px;
+    background: transparent;
+    color: var(--color-gris);
+    box-shadow: 5px 5px 10px black;
+
+}
+      
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    box-shadow: none;
+    font-size: 12px;
+}
+
+.botonEncriptar{
+    background: var(--color-blanco);
+    margin-right: 40px;
+}
+
+.botonDesencriptar {
+    background: var(--color-azul);
+    color: var(--color-blanco);
+}
+
+.cont-derecha{
+    width: 250px;
+    height: 500px;
+    padding: 32px;
+    background: var(--color-gris);
+    border-radius: 24px;
+    margin-bottom: 1em;
+    box-shadow: 10px 5px 10px black;
+}
+
+.imagenNoTexto{
+    margin: 20px 0px;
+}
+
+
+
+.resultadoTitulo{
+    color: var(--color-verde);
+    width: 100%;
+    text-align: center;
+}
+
+.resultado{
+    color: var(--color-blanco);
+    text-align: center;
+    position: relative;
+}
+
+.output {
+    color: var(--color-verde);
+    border: 0;
+    background: none;
+    resize: none;
+    font-size: 1.5rem;
+}
+
+.output:focus {
+    outline: none;
+}
+.botonCopiar {
+    position: absolute;
+    background: var(--color-verde);
+    color: var(--color-blanco);
+    top: 433px;
+    right: 25px;
+}
+
+
+footer{
+    font-size: 0.75rem;
+    color: var(--color-blanco);
+    text-align: center;
+    background-color: var(--color-gris);
+    padding: 1rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px){
+    body{
+        width: auto;
+        background-size: 100%;
+        line-height: 1.2;
+    }
+    
+    .contenedor,.cont-izquierda,.boton{
+        width: 100%;
+        display: inline-block;
+    }
+
+    .cont-izquierda .boton{
+        margin: 2%;
+    }
+
+    .input{
+        height: 300px;
+        margin-top: 1em;
+        line-height: 1;
+    }
+
+    ::placeholder{
+        font-size: 1.5rem;
+    }
+
+    .cont-alerta{
+        margin: 1em;
+    }
+
+    .alerta {
+        font-size: 0.75em;
+        line-height: 1;
+    }
+    
+    .cont-derecha{
+        box-shadow: 0px 10px 20px 10px rgba(0,0,0,1);
+        padding: 5%;
+        width: 90%;
+        display: inline-block;
+        margin-top: 2em;
+    }
+
+    .boton{
+        padding: 0.5em;
+        width: 90%;
+    }
+
+    button:active{
+        box-shadow: none;
+        font-size: 14px;
+    }
+
+    .botonCopiar {
+        right: 15px;
+    }
+
+    footer{
+        width: 92%;
+    };
+}
